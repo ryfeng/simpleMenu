@@ -1,0 +1,27 @@
+.simpleMenuItem
+{
+  display: block;
+  background: #EEE;
+  padding: 5px;
+  min-width: 100px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 2px 2px 2px #888;
+  -webkit-box-shadow: 2px 2px 2px #888;
+  box-shadow: 2px 2px 2px #888;
+  border: 1px solid black;
+}
+
+.simpleMenuItem:hover
+{
+  background: #B0E0B0;
+}
+
+.simpleMenuMenu
+{
+  position: absolute;
+  background: #FFF;
+  display: none;
+  min-width: 100px;
+}
