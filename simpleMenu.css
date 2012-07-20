@@ -11,6 +11,7 @@
   -webkit-box-shadow: 2px 2px 2px #888;
   box-shadow: 2px 2px 2px #888;
   border: 1px solid black;
+  white-space: nowrap;
 }
 
 .simpleMenuItem:hover
@@ -24,4 +25,5 @@
   background: #FFF;
   display: none;
   min-width: 100px;
+  white-space: nowrap;
 }

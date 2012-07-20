@@ -6,13 +6,13 @@
   var SimpleMenu = window.SimpleMenu = {
     generate: function(oTree, sTextProp, sIdProp, sChildrenProp) {
       var fItemHelper = function(oTree) {
-        var jTextDiv = $('<span />', {
-          class: 'simpleMenuItem',
+        var jTextDiv = $('<div />', {
+          'class': 'simpleMenuItem',
           id: oTree[sIdProp],
           text: oTree[sTextProp]
         });
         var children = $('<div />', {
-          class: 'simpleMenuMenu',
+          'class': 'simpleMenuMenu',
           html: fMenuHelper(oTree[sChildrenProp])
         });
         return jObjectToString(jTextDiv) + jObjectToString(children);
@@ -24,7 +24,7 @@
 
       if (oTree[sTextProp]) {
         return jObjectToString($('<div />', {
-          class: 'simpleMenuMenu',
+          'class': 'simpleMenuMenu',
           html: fMenuHelper([oTree])
         }));
       } else {
@@ -77,6 +77,6 @@
         SimpleMenu.hideAllMenus(jElement);
         jToggler.data('shown', false);
       });
-    },
+    }
   };
 })();
